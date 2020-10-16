@@ -42,7 +42,7 @@ def predict():
                            prediction_text='Sentiment of the provided review is : {}'.format(predicted_sentiment))
 
 
-@app.route('/predict-api', methods=['POST'])
+@app.route('/predict-api', methods=['POST', 'GET'])
 def predictApi():
     '''
     For rendering results on HTML GUI
