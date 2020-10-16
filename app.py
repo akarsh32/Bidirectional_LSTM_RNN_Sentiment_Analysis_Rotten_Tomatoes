@@ -68,9 +68,9 @@ port = int(os.getenv("PORT", 8080))
 if __name__ == "__main__":
     # app.run(host='0.0.0.0', port=port)
     clApp = ClientApp()
-    host = "127.0.0.1"
-    # host = '0.0.0.0'
-    port = 5000
+    #host = "127.0.0.1"
+    host = '0.0.0.0'
+    #port = 5000
     # app.run(host='0.0.0.0', port=port, app=app)
     httpd = simple_server.make_server(host, port, app)
     print("Serving on %s %d" % (host, port))
